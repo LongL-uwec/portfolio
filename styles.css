@@ -1,0 +1,83 @@
+html{
+    background-color: rgb(247, 245, 245);
+}
+nav{
+    background-color: rgb(122, 28, 209);
+    margin: 1rem 0 0;
+    padding: .25rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    font-size: large;
+    border: solid transparent;
+    padding: .1rem .25rem;
+}
+nav>a:hover{
+    border: solid black;
+    background-color: white;
+    color: rgb(122, 28, 209);
+}
+header>h1{
+    color: transparent;
+    font-size: xx-small;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: 'Signika', sans-serif;
+    font-style: italic;
+    font-size: xx-large;
+}
+#about{
+    margin: .5rem 0 1rem;
+}
+body{
+    font-family: 'Signika', sans-serif;
+}
+div{
+    background-color: rgb(200, 178, 223);
+    margin: 1rem 0;
+    padding: 1rem;
+}
+div>div{
+    padding: 0;
+    margin: 0;
+}
+.pets{
+    background-color: transparent;
+    padding: 0;
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+div img{
+    max-width: 100%;
+}
+.sisters{
+    width: 30rem;
+}
+.simon{
+    width: 8.90rem;
+}
+.dogs{
+    width: 19rem;
+}
+footer{
+    background-color: rgb(200, 178, 223);
+    padding: 0 1rem 1rem;
+}
+footer>a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1rem 0 0;
+    margin: 0;
+}
+footer>a:hover{
+    text-decoration: underline;
+}
