@@ -2,7 +2,7 @@ html{
     background-color: rgb(247, 245, 245);
 }
 nav{
-    background-color: rgb(122, 28, 209);
+    background-color: rgb(93, 28, 153);
     margin: 1rem 0 0;
     padding: .25rem 1.25rem;
     display: flex;
@@ -19,7 +19,7 @@ nav>a{
 nav>a:hover{
     border: solid black;
     background-color: white;
-    color: rgb(122, 28, 209);
+    color: rgb(93, 28, 153);
 }
 header>h1{
     color: transparent;
@@ -38,6 +38,9 @@ h2{
 body{
     font-family: 'Signika', sans-serif;
 }
+p{
+    margin: 0;
+}
 div{
     background-color: rgb(200, 178, 223);
     margin: 1rem 0;
@@ -53,16 +56,23 @@ div>div{
     display: inline;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 div img{
     max-width: 100%;
 }
 .sisters{
-    width: 30rem;
+    background-color: rgb(200, 178, 223);
+    padding: 1rem;
+}
+.sisters img{
+    width: 12rem;
+    float: left;
+    margin: 0 1rem 1rem 0;
 }
 .simon{
     width: 8.90rem;
+    margin: 0 1rem 0 0;
 }
 .dogs{
     width: 19rem;
@@ -80,4 +90,82 @@ footer>a{
 }
 footer>a:hover{
     text-decoration: underline;
+}
+@media (min-width:500px){
+    .work{
+        max-width: 440px;
+    }
+    .about{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    @media (min-width:522px){
+        .acct, .isinfo{
+            max-width: 460px;
+        }
+        .collection{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+        .is{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+        @media (min-width:600px){
+            .sisters{
+                max-width: 545px;
+            }
+            .is img{
+                width: 535px;
+            }
+            @media (min-width:1040px){
+                .is img{
+                    margin: 0 0 0 1rem;
+                }
+                header{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    margin: 0 0 1rem;
+                }
+                header img{
+                    width: 900px;
+                    margin: 0 1rem 0 0;
+                }
+                nav{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 0 3rem;
+                }
+                @media (min-width:1545px){
+                    .about{
+                        justify-content: space-between;
+                    }
+                    @media (min-width:1590px){
+                        h2{
+                            text-align: center;
+                        }
+                        .about, .collection{
+                            justify-content: center;
+                        }
+                        .sisters, .pets, .acct{
+                            margin: 0 1.5rem 0 0;
+                        }
+                        footer>a{
+                            text-align: center;
+                        }
+                        footer{
+                            margin: 0 10rem;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 }
